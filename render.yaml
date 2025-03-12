@@ -1,0 +1,9 @@
+services:
+  - name: websocket-chat
+    type: web
+    env: node
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: OPENAI_API_KEY
+        sync: false
